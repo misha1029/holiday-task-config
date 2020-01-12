@@ -1,0 +1,75 @@
+@import "break-points";
+
+.nav {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.75);
+
+  z-index: 9998;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: all 0.5s;
+  display: none;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 255px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  @media screen and (min-width: $lg) {
+    display: block;
+    height: 105px;
+    align-items: center;
+    font-size: 15px;
+    position: relative;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+    width: 50%;
+    text-align: center;
+
+    ul {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      a:hover, a:active {
+        color: white;
+      }
+    }
+    .headerInner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      border-bottom: 0.1px solid #66697E;
+    }
+    img {
+      margin-left: 30px;
+    }
+  }
+}
+
+.openMenu {
+  display: block;
+}
+
+.openMenuAnimation {
+  opacity: 1;
+}
+

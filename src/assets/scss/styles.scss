@@ -1,0 +1,73 @@
+@import "footer";
+@import "banner";
+@import "buttom";
+@import "features";
+@import "works";
+@import "teams";
+@import "download";
+@import "nav";
+@import "testimonials";
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.socialIcons, .footerItem a {
+  border: 1px solid rgb(232, 236, 238);
+  border-radius: 2px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:active {
+
+  transition: background-color, color, 0.3s;
+}
+
+.button {
+  background-color: $accent-color;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  color: white;
+  width: max-content; //сам блок идет на всю ширину допустимого пространства
+  margin: 0 auto;
+  border-radius: 2px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+
+  @media screen and (min-width: $lg) {
+    cursor: pointer;
+    line-height: 1.4em;
+    text-decoration-style: solid;
+    :hover {
+
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .button:hover {
+    background-color: red;
+  }
+}
