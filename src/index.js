@@ -10,11 +10,6 @@ import './assets/js/open-picture';
 import './assets/js/switch-slider';
 
 
-/*function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-}*/
-
 
 
 

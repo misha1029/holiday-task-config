@@ -1,8 +1,9 @@
+'use strict';
 
 const activePictures = document.getElementsByClassName("work");
 
 for (const picture of activePictures) {
-  picture.onclick = ( event ) => {
+  picture.onclick = (event) => {
     event.stopImmediatePropagation();
     const sourceImg = event.currentTarget.querySelector("img");
     const pictureBackground = document.createElement("div");
@@ -25,8 +26,6 @@ for (const picture of activePictures) {
     console.log(sourceImg);
   }
 }
-
-
 
 
 function closeOpenPicture() {

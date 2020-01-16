@@ -58,7 +58,7 @@ const createPersonDescription = description => {
 };
 
 const createPersonLink = linkArray => {
-  const iconsDifferentSocial = ['fa-facebook-f', 'fa-twitter', 'fa-linkedin-in', 'fa-google-plus-g','fa-dribbble'];
+  const iconsDifferentSocial = ['fa-facebook-f', 'fa-twitter', 'fa-linkedin-in', 'fa-google-plus-g', 'fa-dribbble'];
   let num = 0;
 
   const linkBlock = document.createElement('ul');
