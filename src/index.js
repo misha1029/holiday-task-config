@@ -7,7 +7,7 @@ import './assets/scss/teams.scss';
 import './assets/js/header.js';
 import './assets/js/team.js';
 import './assets/js/open-picture';
-
+import './assets/js/switch-slider';
 
 
 /*function onClick(element) {
