@@ -1,88 +1,97 @@
-@import "theme";
 @import "break-points";
+@import "theme";
 
-
-.teams {
+#teams{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   text-align: center;
-  padding: 100px 0 0 0px;
+  padding: 100px 0;
 
   @media screen and (min-width: $lg) {
     text-align: left;
   }
 }
 
-
-.personContainer {
-  display: block;
-  margin: 0 auto 50px;
-  max-width: 270px;
-
-}
-
-.personContent {
-
+.person{
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 50px;
-  margin-top: 20px;
-  text-align: center;
+
+  img {
+    margin-bottom: 20px;
+    width: inherit;
+  }
+
+  h4, h5, p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+  }
+
+  h4{
+    margin: 10px 0;
+    font-size: 22px;
+    color: #2d3033;
+  }
+
+  h5{
+    margin: 10px 0 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #e84545;
+  }
+
+  p{
+    margin-bottom: 40px;
+    line-height: 1.6em;
+    font-size: 14px;
+    color: #6c7279;
+  }
 }
 
-.personContent > h4 {
-  display: block;
-  font-weight: 400;
-  font-size: 22px;
-  color: #2d3033;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+i{
+  color: #C6CACC;
 
 }
 
-.personContent > h5 {
-  display: block;
-  text-align: center;
-  color: $accent-color;
-  font-size: 13px;
-  font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
 
 
-}
-
-.personContent > p {
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  line-height: 22.4px;
-  color: #6c7279;
-  margin: 0 0 10px;
-
-
-}
-
-.informationContainer {
+.socialIconsContainer{
+  margin-top: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
-
+  align-items: center;
 
 }
 
-.teamsBottom {
-  border: 1px solid #e8ecee;
+.socialIconsItem{
+  border: 1px solid rgb(232, 236, 238);
   border-radius: 2px;
-  color: #c6cacc;
-  display: block;
-  font-size: 18px;
-  height: 40px;
-  line-height: 40px;
-  margin-right: 10px;
-  text-align: center;
+  cursor: pointer;
   width: 40px;
+  height: 40px;
+  text-align: left;
 
+  i {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 
+  }
+
+  +.socialIconsItem{
+    margin-left: 10px;
+  }
+}
+
+.socialIconsItem:hover,.socialIconsItem:active {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  color: white;
 }
 
 
