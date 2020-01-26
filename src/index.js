@@ -1,14 +1,13 @@
 'use strict';
 import './assets/css/reset.css';
-import './assets/scss/layout.scss';
+import './assets/scss/addition/layout.scss';
 import './assets/scss/styles.scss';
-import './assets/scss/teams.scss';
+import './components/team/scss/teams.scss';
 
-import './assets/js/header.js';
-import './assets/js/team.js';
-import './assets/js/open-picture';
-import './assets/js/switch-slider';
-
+import './components/banner/js/header.js';
+import './components/team/js/team.js';
+import './components/works/js/open-picture.js';
+import './components/testimonials/js/slider.js';
 
 
 

@@ -1,4 +1,4 @@
-@import "break-points";
+@import "../../../assets/scss/addition/break-points";
 
 .pictureBackground {
   position: fixed;
@@ -36,7 +36,7 @@
     top: -20px;
     right: -20px;
     cursor: pointer;
-    background-image: url("../../assets/images/fancybox_sprite@2x.png");
+    background-image: url("../../../assets/images/fancybox_sprite@2x.png");
     background-size: 44px 152px;
   }
 }

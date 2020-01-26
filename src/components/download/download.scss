@@ -1,10 +1,11 @@
-@import "theme";
-@import "break-points";
+@import "../../assets/scss/addition/theme";
+@import "../../assets/scss/addition/break-points";
 
 .download{
    display: block;
   padding-bottom: 100px;
  }
+
 .downloadText{
   min-height: 1px;
   padding-right: 15px;

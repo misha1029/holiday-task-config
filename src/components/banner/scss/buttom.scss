@@ -1,5 +1,6 @@
-@import "theme";
-@import "break-points";
+@import "../../../assets/scss/addition/theme";
+@import "../../../assets/scss/addition/break-points";
+
 
 #burgerContainer {
   z-index: 9999;
@@ -12,7 +13,7 @@
   background-color: $accent-color;
   width: 44px;
   height: 44px;
-  margin: 30px 25px 30px 0;
+  margin: 30px 0px 30px 0;
 
   @media screen and (min-width: $lg) {
     display: none;

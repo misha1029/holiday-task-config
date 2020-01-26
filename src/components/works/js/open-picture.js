@@ -1,4 +1,6 @@
 'use strict';
+import '../scss/works.scss';
+import '../scss/open-picture.scss';
 
 const activePictures = document.getElementsByClassName("work");
 

@@ -1,5 +1,5 @@
-@import "break-points";
-@import "theme";
+@import "../../../assets/scss/addition/break-points";
+@import "../../../assets/scss/addition/theme";
 
 #works {
   display: flex;
@@ -37,7 +37,7 @@
     background-color: rgba(232, 69, 69, 0.9);
     position: absolute;
     transition-property: background-color;
-    transition-duration: 0.6s;
+    transition-duration: 0.7s;
     opacity: 0;
     left: 0;
     right: 0;
@@ -50,33 +50,35 @@
     }
   }
 
-  &:hover {
-    .overlay {
-      opacity: 1;
+  @media screen and (min-width: $lg) {
 
-      .name {
-        color: white;
-        font-size: 14px;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-top: 35%;
+    &:hover {
+      .overlay {
+        opacity: 1;
+
+        .name {
+          color: white;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-top: 35%;
+        }
+
+        .website {
+          color: white;
+          font-size: 14px;
+          font-weight: 500;
+          margin-top: 3%;
+        }
       }
 
-      .website {
-        color: white;
-        font-size: 14px;
-        font-weight: 500;
-        margin-top: 3%;
+      img {
+        transition-property: transform;
+        transition-duration: 0.6s;
+        transform: scale(1.1);
+        transform-origin: center;
       }
-    }
-
-    img {
-      transition-property: transform;
-      transition-duration: 0.6s;
-      transform: scale(1.1);
-      transform-origin: center;
     }
   }
-
 }
 

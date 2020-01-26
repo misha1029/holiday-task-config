@@ -1,5 +1,9 @@
 'use strict';
 
+import '../scss/buttom.scss'
+import '../scss/nav.scss'
+import '../scss/banner.scss'
+
 const menu = document.querySelector('.nav');
 const burger = document.getElementById("burgerContainer");
 const header = document.querySelector(".header");

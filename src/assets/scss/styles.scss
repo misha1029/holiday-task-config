@@ -1,13 +1,13 @@
-@import "footer";
-@import "banner";
-@import "buttom";
-@import "features";
-@import "works";
-@import "teams";
-@import "download";
-@import "nav";
-@import "testimonials";
-@import "open-picture";
+@import "../../components/footer/footer";
+/*@import "../../components/banner/scss/banner";
+@import "../../components/banner/scss/buttom";*/
+@import "../../components/features/features";
+/*@import "../../components/works/scss/works";*/
+/*@import "../../components/team/scss/teams";*/
+@import "../../components/download/download";
+/*@import "../../components/banner/scss/nav";*/
+/*@import "../../components/testimonials/scss/testimonials";*/
+/*@import "../../components/works/scss/open-picture";*/
 
 
 body {

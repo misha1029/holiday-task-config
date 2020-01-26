@@ -1,4 +1,5 @@
 'use strict';
+import '../scss/teams.scss';
 
 const teams = document.getElementById('teams');
 

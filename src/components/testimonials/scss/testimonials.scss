@@ -1,0 +1,135 @@
+@import "../../../assets/scss/addition/theme";
+@import "../../../assets/scss/addition/break-points";
+
+#testimonials{
+  position: relative;
+  background-color: #53354a;
+  width: 100%;
+  margin-bottom: 100px;
+
+  .radioBox{
+    z-index: 1;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    *{
+      margin: 0 10px;
+    }
+
+    input {
+      display: flex;
+      width: 10px;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      appearance: none;
+      cursor: pointer;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    input.changeSlide {
+      background: rgba(255, 255, 255, 1);
+    }
+  }
+
+
+  @media screen and (min-width: $lg) {
+
+    .radioBox {
+      left: 76%;
+      transform: translateX(-80%);
+    }
+  }
+}
+
+.slide{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  transition:  opacity 1s;
+
+
+  & + &{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+
+
+  img{
+    width: 100%;
+  }
+
+  blockquote{
+    display: flex;
+    flex-direction: column;
+
+
+    width: 95%;
+    padding: 60px 60px 0;
+
+    color: white;
+    overflow: hidden;
+
+    .quoteText{
+      font-size: 36px;
+      font-family: Cardo, Georgia, "Times New Roman", serif;
+
+
+      text-overflow: ellipsis;
+      white-space: normal;
+      overflow: hidden;
+      line-height: 1.03em;
+    }
+
+    .quoteAuthor{
+      margin: 30px 0 60px;
+
+      font-family: "Raleway", sans-serif;
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (min-width: $lg) {
+    flex-direction: row;
+
+    img{
+      width:50%;
+    }
+
+
+  }
+
+}
+
+
+
+.activeSlide{
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: $lg) {
+  .slide{
+    blockquote{
+      padding: 20px 30px;
+    }
+  }
+
+}
+
+
+
+
+
